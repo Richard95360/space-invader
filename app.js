@@ -142,8 +142,11 @@ function bougerLesAliens(){
 
         if(alienInvaders[i] > toutesLesDivs.length - width){
             affichage.textContent = 'Game Over';
+           
             clearInterval(invaderId);
+            
         }
+        
 
     }
 
@@ -202,6 +205,17 @@ function tirer(e){
         }, 100);
     }
 
+     if(e.keyCode === 13){
+       
+        window.location.reload("true");
+       
+        
+    } 
+    
+    
+
 }
 
 document.addEventListener('keyup', tirer);
+
+
