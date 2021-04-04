@@ -8,6 +8,8 @@ let tireurPosition = 229;
 let direction = 1;
 let width = 20;
 
+
+
 function creationGrilleEtAliens(){
 
     let indexAttr = 0;
@@ -206,11 +208,8 @@ function tirer(e){
     }
 
      if(e.keyCode === 13){
-       
         window.location.reload("true");
-       
-        
-    } 
+     } 
     
     
 
